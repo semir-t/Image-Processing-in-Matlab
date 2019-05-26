@@ -9,7 +9,7 @@ end
 
 for i = 1:m
     for j = 1:n
-        for k = 1:3
+        for k = 1:l
             x = I(i,j,k);
             h(x + 1,k) = h(x+1,k) + 1;
         end

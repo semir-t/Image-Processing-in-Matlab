@@ -13,6 +13,10 @@ Basic concepts of Image processing with examples in Matlab
 3. rgb_histogram.m - Function for generating color image histogram
 4. pixel_value_filter.m  - Filtering image by pixel value
 5. filter_by_value.m - Detecting background by color
+6. pixel_transformation.m - Function for chaging pixel value based on Look-up table (LUT)
+7. pixel_lut_exp - Exponentional function aproximated with LUT
+8. pixel_lut_log - Log function aproximated with LUT
+9. pixel_lut_gama - Power function aproximated with LUT
 
 # 2. Image Filtering in the Spatial Domain
 
