@@ -10,6 +10,9 @@ Basic concepts of Image processing with examples in Matlab
 
 1. histogram.m
 2. histogram_color_image.m
+3. rgb_histogram.m 
+4. pixel_value_filter.m 
+5. filter_by_value.m
 
 # 2. Image Filtering in the Spatial Domain
 
