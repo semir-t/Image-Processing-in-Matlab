@@ -11,7 +11,7 @@ Ig = imnoise(I,'gaussian',0.02);        % Add Gaussian noise
 
 
 %define size of the neighborhood
-neighborhood = [5 5];
+neighborhood = [3 3];
 %define filters
 filter = [1 round((neighborhood(1) * neighborhood(2))/2) (neighborhood(1) * neighborhood(2))];
 %[ min_filter median_filter max_filter]
