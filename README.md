@@ -8,11 +8,11 @@ Basic concepts of Image processing with examples in Matlab
 
 # 1. Intensity Transformations
 
-1. histogram.m
-2. histogram_color_image.m
-3. rgb_histogram.m 
-4. pixel_value_filter.m 
-5. filter_by_value.m
+1. histogram.m - Generatate histogram for grayscale image
+2. histogram_color_image.m - Generate histogram for color image
+3. rgb_histogram.m - Function for generating color image histogram
+4. pixel_value_filter.m  - Filtering image by pixel value
+5. filter_by_value.m - Detecting background by color
 
 # 2. Image Filtering in the Spatial Domain
 
@@ -26,7 +26,7 @@ Examples:
 # 3. Edge detection
 
 Examples
-1. first_order_edge_detection.m
-2. second_odred_edge_detection.m
-3. zero_crossing_edge_detector.m
-4. edge_emphasise.m
+1. first_order_edge_detection.m - Edge detection using kernel aproximation of first order deviation
+2. second_odred_edge_detection.m - Edge detection using kernel aproximation of second order deviation 
+3. zero_crossing_edge_detector.m - LoG filter
+4. edge_emphasise.m - Emphasasing edges using LoG filter
