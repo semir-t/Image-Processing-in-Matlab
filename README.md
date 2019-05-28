@@ -17,6 +17,9 @@ Basic concepts of Image processing with examples in Matlab
 7. pixel_lut_exp - Exponentional function aproximated with LUT
 8. pixel_lut_log - Log function aproximated with LUT
 9. pixel_lut_gama - Power function aproximated with LUT
+10. histogram_equalization - Histogram equalization
+11. adaptive_histogram - Adaptive histogram equalization
+12. rgb_histogram_euqalization.m - Histogram equalization on color images
 
 # 2. Image Filtering in the Spatial Domain
 
