@@ -66,5 +66,5 @@ Examplse
 3. inverse_filtering.m - Inverse filtering
 4. inverse_filtering_constrained_division.m - Inverse filtering with constrained_division
 5. inverse_filtering_lp_filter - Inverse filtering with low pass filter
-6. [x] Add motion debluring
-7. [x] Add Wiener filtering
+6. *Add motion debluring*
+7. *Add Wiener filtering*
