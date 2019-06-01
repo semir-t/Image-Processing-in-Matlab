@@ -1,6 +1,10 @@
 %% Filtering by value
+close all
+clear all
+clc
 
 Io = imread('peppers.png');
+figure,imshow(Io);
 figure,rgb_histogram(Io);
 I = pixel_value_filter(Io,[40 80],[0 50],[40 80]);
 figure,imshow(I);

@@ -5,6 +5,8 @@ Basic concepts of Image processing with examples in Matlab
 1. Intensity Transformations
 2. Image Filtering in the Spatial Domain
 3. Edge detection
+4. Image Filtering in frequency domain
+5. Image restoration
 
 # 1. Intensity Transformations
 
@@ -37,3 +39,23 @@ Examples
 2. second_odred_edge_detection.m - Edge detection using kernel aproximation of second order deviation 
 3. zero_crossing_edge_detector.m - LoG filter
 4. edge_emphasise.m - Emphasasing edges using LoG filter
+
+# 4. Image Filtering in frequency domain
+TO implement image filtering in frequnecy domain it is required to follow steps listed below:
+1. Read image (imread());
+2. Obtain the Fourier transform **F** of the image
+3. Generate the filter function **H**, the same size as the image
+4. Multiply the transformer image by the filter **G = H .\* F**
+5. Optain inverse FFT of the **G** 
+6. Scale the output image
+
+Examples
+1. fft_image.m - Generate fft for an image.
+2. ideal_lp_filter.m - Ideal low pass filter
+3. ideal_hp_filter.m - Ideal high pass filter
+4. butterworth_lp_filter.m - Butterworth low pass filter
+5. butterworth_hp_filter.m - Butterworth high pass filter
+6. gauss_lp_filter.m - Gauss low pass filter
+7. gauss_hp_filter.m - Gauss high pass filter
+
+# 5.

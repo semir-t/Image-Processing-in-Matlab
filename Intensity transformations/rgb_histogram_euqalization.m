@@ -3,8 +3,8 @@ close all
 clear all
 clc
 
-I = imread('autumn.tif');
-%I = imread('../images/cat00.jpg');
+%I = imread('autumn.tif');
+I = imread('../images/cat00.jpg');
 Ihsv = rgb2hsv(I);
 V = adapthisteq(Ihsv(:,:,3));
 Ihsv(:,:,3) = V;
