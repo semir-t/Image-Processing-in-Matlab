@@ -9,7 +9,7 @@ I = imread('cameraman.tif');
 
 % Creating distorzion on the image
 tf = fftshift(fft2(I));
-b = lbutterworth(t,15,2);
+b = lbutterworth(I,15,2);
 tb = tf .* b;
 tba = abs(ifft2(tb));
 tba = uint8(255*mat2gray(tba));

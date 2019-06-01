@@ -9,7 +9,7 @@ I = imread('cameraman.tif');
 
 % Creating distorzion on the image
 tf = fftshift(fft2(I));
-b = lbutterworth(t,15,2);
+b = lbutterworth(I,15,2);
 tb = tf .* b;
 tba = abs(ifft2(tb));
 tba = uint8(255*mat2gray(tba));
@@ -19,21 +19,21 @@ figure;imshow(tba)
 d = 0.01;
 b(find(b<d)) = 1;
 t1 = fftshift(fft2(tba))./b;
-t1a = abs(ifft2(tq));
+t1a = abs(ifft2(t1));
 figure,
-subplot(2,2,1);imshow(mat2gray(ta1));
+subplot(2,2,1);imshow(mat2gray(t1a));
 d = 0.005;
 b(find(b<d)) = 1;
 t1 = fftshift(fft2(tba))./b;
-t1a = abs(ifft2(tq));
-subplot(2,2,2);imshow(mat2gray(ta1));
+t1a = abs(ifft2(t1));
+subplot(2,2,2);imshow(mat2gray(t1a));
 d = 0.002;
 b(find(b<d)) = 1;
 t1 = fftshift(fft2(tba))./b;
-t1a = abs(ifft2(tq));
-subplot(2,2,3);imshow(mat2gray(ta1));
+t1a = abs(ifft2(t1));
+subplot(2,2,3);imshow(mat2gray(t1a));
 d = 0.001;
 b(find(b<d)) = 1;
 t1 = fftshift(fft2(tba))./b;
-t1a = abs(ifft2(tq));
-subplot(2,2,4);imshow(mat2gray(ta1));
+t1a = abs(ifft2(t1));
+subplot(2,2,4);imshow(mat2gray(t1a));

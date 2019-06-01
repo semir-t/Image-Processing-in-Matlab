@@ -21,4 +21,5 @@ br = (z < 47 | z > 51);
 tbr = tpf .* br;
 tf = ifft2(tbr);
 figure,
-imshow(abs(tf),[])
+subplot(1,2,1), imshow(tp); title('Image with noise before filtering');
+subplot(1,2,2),imshow(abs(tf)); title('Image with noise after filtergin'); 
