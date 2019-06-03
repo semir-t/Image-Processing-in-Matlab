@@ -7,6 +7,8 @@ Basic concepts of Image processing with examples in Matlab
 3. Edge detection
 4. Image Filtering in frequency domain
 5. Image restoration
+6. Image segmenation
+7. Morphology
 
 # 1. Intensity Transformations
 
@@ -68,3 +70,18 @@ Examplse
 5. inverse_filtering_lp_filter - Inverse filtering with low pass filter
 6. *Add motion debluring*
 7. *Add Wiener filtering*
+
+# 6. Image segmenation
+1. threshold.m - Segmenation using manual threshold value.
+2. histogram_approximation - Approximate histogram with polynomial function
+3. otsu.m - Otsu's method 
+4. *Add entropy classsification*
+5. *Add isodata algorithm*
+
+# 7. Morphology
+1. erosion.m - Erosion operation
+2. dilatation.m - Dilatation operation
+3. opening.m - Opening operation
+4. closing.m - Closing operation
+5. *hit_or_miss_transformation.m* - Not working like intended
+6. opening_by_reconstruction.m

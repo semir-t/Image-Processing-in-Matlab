@@ -6,10 +6,10 @@ clear all
 clc
 
 % Read image
-I = imread('nodules1.tif') 
+I = imread('coins.png'); 
 
 % Transform grayscale image to binary image
-bw = ~im2bw(I,graythresh(I));
+bw = im2bw(I,graythresh(I));
 
 figure, imshow(bw); title('Binary image');
 
@@ -19,7 +19,7 @@ se = strel('disk',3);
 % Apply dilatation
 bw1 = imdilate(bw,se);
 % Apply erosion
-bw2 = imerose(bw1,se);
+bw2 = imerode(bw1,se);
 
 % Closing operation in matlab
 bw3 = imclose(bw,se);

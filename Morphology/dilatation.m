@@ -5,7 +5,7 @@ clear all
 clc
 
 % Read image
-I = imread('nodules1.tif') 
+I = imread('coins.png'); 
 
 % Transform grayscale image to binary image
 bw = im2bw(I,graythresh(I));
