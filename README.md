@@ -9,6 +9,7 @@ Basic concepts of Image processing with examples in Matlab
 5. Image restoration
 6. Image segmenation
 7. Morphology
+8. Regionprops
 
 # 1. Intensity Transformations
 
@@ -62,7 +63,7 @@ Examples
 
 # 5. Image restoration
 
-Examplse
+Examples
 1. periodic_noise.m - Add periodic noise to the image
 2. filtering_periodic_noise.m - Remove periodic noise using band stop filter
 3. inverse_filtering.m - Inverse filtering
@@ -72,6 +73,8 @@ Examplse
 7. *Add Wiener filtering*
 
 # 6. Image segmenation
+
+Examples:
 1. threshold.m - Segmenation using manual threshold value.
 2. histogram_approximation - Approximate histogram with polynomial function
 3. otsu.m - Otsu's method 
@@ -79,9 +82,19 @@ Examplse
 5. *Add isodata algorithm*
 
 # 7. Morphology
+
+Examples
 1. erosion.m - Erosion operation
 2. dilatation.m - Dilatation operation
 3. opening.m - Opening operation
 4. closing.m - Closing operation
 5. *hit_or_miss_transformation.m* - Not working like intended
 6. opening_by_reconstruction.m
+
+#8. Regionprops
+
+Examples:
+1. circle.m
+2. bwlabel_example.m
+3. boundingbox.m
+
